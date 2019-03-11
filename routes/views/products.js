@@ -7,7 +7,7 @@ exports = module.exports = function (req, res) {
 	// Set Locals
 	locals.section = 'store';
 
-	// Load Products
+	// Load Products object from model/Product.js
 	// keystone.list('MODEL')
 	view.query('products', keystone.list('Product').model.find());
 
